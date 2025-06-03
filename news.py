@@ -17,7 +17,7 @@ def fetch_news_relative(query, days_ago=None):
         'sortBy': 'relevancy',
         'pageSize': 50,
         'excludeDomains': 'itainews.com',
-        'country': 'jp'
+        'language': 'jp'
     }
 
     if days_ago is not None:
