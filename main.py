@@ -34,7 +34,7 @@ def main():
         # スプレッドシートを開く
         worksheet = gc.open_by_key(spreadsheet_key).sheet1
 
-        query = 'policy OR 日本の政策 OR 政府 政策 日本 OR 行政 政策 日本 OR 海外 政策 OR 国際 政策 OR 米国 政策 OR 中国 政策 OR EU 政策 OR 経済政策 OR 金融政策 OR 財政政策 OR 少子化 OR 少子高齢化 OR 少子化対策'
+        query = '読解力 OR 読書 OR 図書室 OR 図書館 OR 図書館政策 OR 公共図書館 OR 図書館サービス OR 図書館法 OR 図書館協会 OR 図書館運営 OR 図書館改革 OR 図書館予算 OR 図書館条例'
         df = news.fetch_news_relative(query=query, days_ago=7) # 過去1週間に変更
 
         print("\n過去1週間のニュース:") 

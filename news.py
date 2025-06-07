@@ -16,7 +16,14 @@ def fetch_news_relative(query, days_ago=None):
         'q': search_query,
         'sortBy': 'relevancy',
         'pageSize': 50,
-        'excludeDomains': 'itainews.com',
+        'excludeDomains': (
+            'itainews.com,matome.naver.jp,newsまとめ.com,blog.livedoor.jp,alfalfalfa.com,hamusoku.com,'
+            'world-fusigi.net,blog.esuteru.com,news4vip.livedoor.biz,newsoku.blog.jp,'
+            'dain.cocolog-nifty.com,fujipon.hatenadiary.com,blog.tatsuru.com,bookmark.hatenastaff.com,'
+            'togetter.com,nwknews.jp,kindou.info,mobilelaby.com,blog.goo.ne.jp,tocana.jp,'
+            'finalvent.cocolog-nifty.com,rumor.way-nifty.com,eulabourlaw.cocolog-nifty.com,'
+            'www.gadget2ch.com,nowokay.hatenablog.com,arigato-ipod.com,kanasoku.info,findy-code.io,predge.jp'
+        ),
         'language': 'jp'
     }
 
